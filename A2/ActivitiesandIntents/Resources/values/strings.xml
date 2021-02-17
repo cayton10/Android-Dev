@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">ActivitiesandIntents</string>
+    <string name="action_settings">Settings</string>
+    <string name="call">Place Call</string>
+    <string name="email">Send Email</string>
+    <string name="map">Open Map</string>
+    <string name="phone_number">Contact Num: 304.696.6418</string>
+</resources>

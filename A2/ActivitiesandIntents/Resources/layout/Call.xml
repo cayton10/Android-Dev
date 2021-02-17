@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+ android:background="@color/mainActivityBackGroundColor">
+	<TextView
+		android:layout_marginTop="@dimen/phone_num_margin_top"
+		android:textAlignment="center"
+		android:text="@string/phone_number"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/textView1" />
+	<Button
+		android:text="@string/call"
+		android:background="@color/primaryButtonColor"
+		android:textColor="@color/textButtonColor"
+		android:layout_marginHorizontal="@dimen/button_margins_horiz"
+		android:layout_marginTop="@dimen/button_margin_top"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/placeCall" />
+</LinearLayout>

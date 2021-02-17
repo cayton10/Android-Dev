@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="button_margin_top">200dp</dimen>
+    <dimen name="button_margins_horiz">50dp</dimen>
+    <dimen name="button_margins_between_buttons">20dp</dimen>
+    <dimen name="phone_num_margin_top">50dp</dimen>
+</resources>
