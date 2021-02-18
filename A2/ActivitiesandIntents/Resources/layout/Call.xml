@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
- android:background="@color/mainActivityBackGroundColor">
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/mainActivityBackGroundColor"
+	android:weightSum="1">
 	<TextView
 		android:layout_marginTop="@dimen/phone_num_margin_top"
 		android:textAlignment="center"
@@ -20,4 +25,21 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:id="@+id/placeCall" />
+	<FrameLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight=".75"
+		android:id="@+id/frameLayout1" />
+	<Button
+		android:text="@string/cancel_button"
+		android:background="@color/cancelButtonColor"
+		android:textColor="@color/textButtonColor"
+		android:layout_marginHorizontal="@dimen/button_margins_horiz"
+		android:layout_marginTop="@dimen/button_margin_top"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/cancelCall" />
+	
 </LinearLayout>

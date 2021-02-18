@@ -1,12 +1,14 @@
 ﻿<Properties StartupConfiguration="{FB3DDE7F-B52D-4E36-A25C-DF2BAD7EF0E1}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Resources/layout/Call.xml">
     <Files>
-      <File FileName="MainActivity.cs" Line="21" Column="48" />
-      <File FileName="CallActivity.cs" Line="24" Column="48" />
+      <File FileName="MainActivity.cs" Line="23" Column="55" />
+      <File FileName="CallActivity.cs" />
       <File FileName="Resources/layout/Main.xml" Line="1" Column="1" />
-      <File FileName="Resources/layout/Call.xml" Line="3" Column="29" />
+      <File FileName="Resources/layout/Call.xml" Line="34" Column="36" />
       <File FileName="Resources/values/dimens.xml" Line="1" Column="1" />
       <File FileName="Resources/values/colors.xml" Line="1" Column="1" />
+      <File FileName="Resources/values/strings.xml" Line="9" Column="49" />
+      <File FileName="Resources/values/styles.xml" Line="14" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

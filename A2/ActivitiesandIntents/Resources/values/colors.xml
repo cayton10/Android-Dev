@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#1B3147</color>
     <color name="colorAccent">#3498db</color>
     <color name="primaryButtonColor">#00AC3E</color>
+    <color name="cancelButtonColor">#EC4A28</color>
     <color name="textButtonColor">#FFFFFF</color>
     <color name="mainActivityBackGroundColor">#EDEEEE</color>
 </resources>

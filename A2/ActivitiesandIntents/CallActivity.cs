@@ -22,6 +22,20 @@ namespace ActivitiesandIntents
 
             // Create your application here
             SetContentView(Resource.Layout.Call);
+
+            FindViewById<Button>(Resource.Id.placeCall).Click += PlaceCallButtonPushed;
+
+        }
+
+        //Make the phone call
+        //Method to "segue" between activities / views for calling
+        private void PlaceCallButtonPushed(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(CallActivity));
+
+            StartActivity(intent);
         }
     }
+
+
 }
