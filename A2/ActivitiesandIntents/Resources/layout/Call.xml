@@ -15,12 +15,11 @@
 		android:layout_height="wrap_content"
 		android:minWidth="25px"
 		android:minHeight="25px"
-		android:id="@+id/textView1" />
+		android:id="@+id/phoneNumber" />
 	<Button
 		android:text="@string/call"
-		android:background="@color/primaryButtonColor"
+		android:background="@drawable/marshallbutton"
 		android:textColor="@color/textButtonColor"
-		android:layout_marginHorizontal="@dimen/button_margins_horiz"
 		android:layout_marginTop="@dimen/button_margin_top"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -31,7 +30,8 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_weight=".75"
-		android:id="@+id/frameLayout1" />
+		android:id="@+id/frameLayout1" >
+	</FrameLayout>
 	<Button
 		android:text="@string/cancel_button"
 		android:background="@color/cancelButtonColor"

@@ -6,25 +6,23 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_marginTop="@dimen/button_margin_top"
-		android:layout_marginHorizontal="@dimen/button_margins_horiz"
-		android:background="@color/primaryButtonColor"
+		android:background="@drawable/marshallbutton"
 		android:textColor="@color/textButtonColor"
 		android:id="@+id/callSegue" />
 	<Button
-		android:layout_marginHorizontal="@dimen/button_margins_horiz"
+
 		android:layout_marginVertical="@dimen/button_margins_between_buttons"
 		android:text="@string/email"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:background="@color/primaryButtonColor"
+		android:background="@drawable/marshallbutton"
 		android:textColor="@color/textButtonColor"
 		android:id="@+id/openEmail" />
 	<Button
-		android:layout_marginHorizontal="@dimen/button_margins_horiz"
 		android:text="@string/map"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:background="@color/primaryButtonColor"
+ 		android:background="@drawable/marshallbutton"
 		android:textColor="@color/textButtonColor"
 		android:id="@+id/openMap" />
 

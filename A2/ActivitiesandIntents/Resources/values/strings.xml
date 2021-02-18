@@ -5,6 +5,6 @@
     <string name="call">Place Call</string>
     <string name="email">Send Email</string>
     <string name="map">Open Map</string>
-    <string name="phone_number">Contact Num: 304.696.6418</string>
+    <string name="phone_number">1.304.696.6418</string>
     <string name="cancel_button">Cancel</string>
 </resources>
