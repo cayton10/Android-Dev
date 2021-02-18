@@ -48,7 +48,17 @@ namespace ActivitiesandIntents
         
         private void OpenEmail_Push(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            String email = drMauro.Email.ToString();
+
+            var intent = new Intent();
+            intent.SetAction(Intent.ActionSend);
+
+            intent.SetData(Android.Net.Uri.Parse($"mailto:{email}"));
+            //Lick stamp and send IF we have an application that can accomplish
+            if (intent.ResolveActivity(PackageManager) != null)
+            {
+                StartActivity(intent);
+            }
         }
 
         //Method to "segue" between activities / views for calling

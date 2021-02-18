@@ -17,5 +17,11 @@ namespace ActivitiesandIntents
             get { return location; }
             set { location = value; }
         }
+
+        public String Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
     }
 }
