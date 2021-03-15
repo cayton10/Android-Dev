@@ -27,30 +27,21 @@ namespace DataPersistence
 
             Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
             Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
 
             var lv = FindViewById<ListView>(Resource.Id.contactListView);
 
             lv.Adapter = new ArrayAdapter<Contact>(this, Android.Resource.Layout.SimpleListItem1, Contacts);
 
-            var addContactButton = FindViewById<Button>(Resource.Id.addContact);
+            FindViewById<Button>(Resource.Id.addContact).Click += Add_Contact_Pushed;
 
 
+        }
+
+        private void Add_Contact_Pushed(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(AddContactActivity));
+            //StartAvtivity(intent)
+            StartActivityForResult(intent, 100);
         }
 
 
@@ -60,7 +51,17 @@ namespace DataPersistence
 
             if(requestCode == 100 && resultCode == Result.Ok)
             {
-                string name = data.GetStringExtra("FirstName");
+                string firstName = data.GetStringExtra("FirstName");
+                string lastName = data.GetStringExtra("LastName");
+                string email = data.GetStringExtra("Email");
+                string phone = data.GetStringExtra("Phone");
+
+                Contacts.Add(new Contact(firstName, lastName, email, phone));
+
+                //Output our updated list on returning new contact
+                var lv = FindViewById<ListView>(Resource.Id.contactListView);
+
+                lv.Adapter = new ArrayAdapter<Contact>(this, Android.Resource.Layout.SimpleListItem1, Contacts);
             }
         }
 
