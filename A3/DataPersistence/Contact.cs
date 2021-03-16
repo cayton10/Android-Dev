@@ -13,8 +13,12 @@ using SQLite;
 
 namespace DataPersistence
 {
+    [Table("Contacts")]
     public class Contact
     {
+
+        [PrimaryKey,AutoIncrement]
+        public int Id { get; set; }
 
         private string first;
         private string last;
@@ -31,6 +35,11 @@ namespace DataPersistence
             this.last = l;
             this.email = e;
             this.phone = p;
+        }
+
+        public Contact()
+        {
+
         }
 
         //Getters / setters

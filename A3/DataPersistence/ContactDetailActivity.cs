@@ -31,6 +31,7 @@ namespace DataPersistence
             FindViewById<TextView>(Resource.Id.nameField).Text = $"{contact.FirstName} {contact.LastName}";
             FindViewById<TextView>(Resource.Id.phoneField).Text = $"{contact.Phone}";
             FindViewById<TextView>(Resource.Id.emailField).Text = $"{contact.Email}";
+            FindViewById<TextView>(Resource.Id.idField).Text = $"{contact.Id}";
 
             //Bind methods for buttons
             FindViewById<Button>(Resource.Id.callContact).Click += CallButtonPushed;

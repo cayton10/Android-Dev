@@ -8,14 +8,19 @@ using Android.Views;
 using Android.Widget;
 using Android.Content;
 using System.Collections.Generic;
+using System.IO;
 using SQLite;
 
 namespace DataPersistence
 {
+    
+
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : Activity
     {
         public static List<Contact> Contacts = new List<Contact>();
+        //Globally scoped class variable for db connection
+        private SQLiteConnection db;
 
         
 
@@ -26,8 +31,18 @@ namespace DataPersistence
             SetContentView(Resource.Layout.activity_main);
 
 
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
-            Contacts.Add(new Contact("Benjamin", "Cayton", "cayton10@live.marshall.edu", "3046389603"));
+            //Set up db connection
+            db = new SQLiteConnection(Globals.dbPath);
+
+            //Connect to table
+            var table = db.Table<Contact>();
+
+
+            //Setup table of type: Contact
+            db.CreateTable<Contact>();
+
+            //Create new contact object
+            Contacts = db.Table<Contact>().ToList();
 
             var lv = FindViewById<ListView>(Resource.Id.contactListView);
 
@@ -35,7 +50,6 @@ namespace DataPersistence
             lv.ItemClick += Contact_Pushed;
 
             FindViewById<Button>(Resource.Id.addContact).Click += Add_Contact_Pushed;
-
 
         }
 
@@ -64,6 +78,9 @@ namespace DataPersistence
                 var lv = FindViewById<ListView>(Resource.Id.contactListView);
 
                 lv.Adapter = new ArrayAdapter<Contact>(this, Android.Resource.Layout.SimpleListItem1, Contacts);
+
+                //Finally, add this contact to the db for persistence
+                db.Insert(new Contact(firstName, lastName, email, phone));
             }
         }
 
