@@ -8,12 +8,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using SQLite;
 
 
 namespace DataPersistence
 {
     public class Contact
     {
+
         private string first;
         private string last;
         private string email;

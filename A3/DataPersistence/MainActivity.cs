@@ -8,6 +8,7 @@ using Android.Views;
 using Android.Widget;
 using Android.Content;
 using System.Collections.Generic;
+using SQLite;
 
 namespace DataPersistence
 {
