@@ -31,6 +31,7 @@ namespace DataPersistence
             var lv = FindViewById<ListView>(Resource.Id.contactListView);
 
             lv.Adapter = new ArrayAdapter<Contact>(this, Android.Resource.Layout.SimpleListItem1, Contacts);
+            lv.ItemClick += Contact_Pushed;
 
             FindViewById<Button>(Resource.Id.addContact).Click += Add_Contact_Pushed;
 
@@ -65,12 +66,17 @@ namespace DataPersistence
             }
         }
 
-
-        /*private void Contacts_Push(object sender, EventArgs e)
+        //Method to inspect contact
+        private void Contact_Pushed(object sender, AdapterView.ItemClickEventArgs e)
         {
-            var intent = new Intent(this, typeof(ContactsActivity));
+            var bundle = new Bundle();
+            bundle.PutInt("ContactPos", e.Position);
+
+            var intent = new Intent(this, typeof(ContactDetailActivity));
+            intent.PutExtras(bundle);
+
             StartActivity(intent);
-        }*/
+        }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
