@@ -19,10 +19,9 @@ namespace DataPersistence
     public class MainActivity : Activity
     {
         public static List<Contact> Contacts = new List<Contact>();
+
         //Globally scoped class variable for db connection
         private SQLiteConnection db;
-
-        
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -37,7 +36,6 @@ namespace DataPersistence
             //Connect to table
             var table = db.Table<Contact>();
 
-
             //Setup table of type: Contact
             db.CreateTable<Contact>();
 
@@ -47,6 +45,7 @@ namespace DataPersistence
             var lv = FindViewById<ListView>(Resource.Id.contactListView);
 
             lv.Adapter = new ArrayAdapter<Contact>(this, Android.Resource.Layout.SimpleListItem1, Contacts);
+
             lv.ItemClick += Contact_Pushed;
 
             FindViewById<Button>(Resource.Id.addContact).Click += Add_Contact_Pushed;
@@ -67,20 +66,19 @@ namespace DataPersistence
 
             if(requestCode == 100 && resultCode == Result.Ok)
             {
-                string firstName = data.GetStringExtra("FirstName");
-                string lastName = data.GetStringExtra("LastName");
-                string email = data.GetStringExtra("Email");
-                string phone = data.GetStringExtra("Phone");
 
-                Contacts.Add(new Contact(firstName, lastName, email, phone));
+                //Connect to table
+                var table = db.Table<Contact>();
 
-                //Output our updated list on returning new contact
+                //Setup table of type: Contact
+                db.CreateTable<Contact>();
+
+                //Create new contact object
+                Contacts = db.Table<Contact>().ToList();
+
                 var lv = FindViewById<ListView>(Resource.Id.contactListView);
 
                 lv.Adapter = new ArrayAdapter<Contact>(this, Android.Resource.Layout.SimpleListItem1, Contacts);
-
-                //Finally, add this contact to the db for persistence
-                db.Insert(new Contact(firstName, lastName, email, phone));
             }
         }
 

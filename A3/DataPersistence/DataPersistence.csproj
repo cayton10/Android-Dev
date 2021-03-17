@@ -66,6 +66,7 @@
     <Compile Include="AddContactActivity.cs" />
     <Compile Include="ContactDetailActivity.cs" />
     <Compile Include="Globals.cs" />
+    <Compile Include="EditContactActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -104,6 +105,10 @@
       <Generator></Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ContactDetail.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Edit.xml">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>

@@ -10,12 +10,17 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using SQLite;
 
 namespace DataPersistence
 {
     [Activity(Label = "AddContactActivity")]
     public class AddContactActivity : Activity
     {
+
+        //Globally scoped class variable for db connection
+        private SQLiteConnection db;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -40,12 +45,17 @@ namespace DataPersistence
             string email = FindViewById<EditText>(Resource.Id.emailInput).Text;
             string phone = FindViewById<EditText>(Resource.Id.phoneInput).Text;
 
-            var intent = new Intent();
+            //Set up db connection
+            db = new SQLiteConnection(Globals.dbPath);
+            //Connect to table
+            var table = db.Table<Contact>();
 
-            intent.PutExtra("FirstName", firstName);
-            intent.PutExtra("LastName", lastName);
-            intent.PutExtra("Email", email);
-            intent.PutExtra("Phone", phone);
+            //Setup table of type: Contact
+            db.CreateTable<Contact>();
+
+            db.Insert(new Contact(firstName, lastName, email, phone));
+
+            var intent = new Intent();
 
             SetResult(Result.Ok, intent);
 

@@ -16,6 +16,9 @@ namespace DataPersistence
     [Activity(Label = "ContactDetailActivity")]
     public class ContactDetailActivity : Activity
     {
+        //Global class variable to keep contact id at arm's length
+        private Contact contact;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -25,18 +28,17 @@ namespace DataPersistence
             int position = Intent.GetIntExtra("ContactPos", -1);
 
             //Grab contact details from list index
-            var contact = MainActivity.Contacts[position];
+            contact = MainActivity.Contacts[position];
 
             //Load that contact info into appropriate data fields
             FindViewById<TextView>(Resource.Id.nameField).Text = $"{contact.FirstName} {contact.LastName}";
             FindViewById<TextView>(Resource.Id.phoneField).Text = $"{contact.Phone}";
             FindViewById<TextView>(Resource.Id.emailField).Text = $"{contact.Email}";
-            FindViewById<TextView>(Resource.Id.idField).Text = $"{contact.Id}";
 
             //Bind methods for buttons
             FindViewById<Button>(Resource.Id.callContact).Click += CallButtonPushed;
             FindViewById<Button>(Resource.Id.emailContact).Click += EmailButtonPushed;
-            //FindViewById<Button>(Resource.Id.editContact).Click += EditButtonPushed;
+            FindViewById<Button>(Resource.Id.editContact).Click += EditButtonPushed;
             
         }
 
@@ -71,6 +73,38 @@ namespace DataPersistence
             if(intent.ResolveActivity(PackageManager) != null)
             {
                 StartActivity(intent);
+            }
+        }
+
+        //Method for sending user to edit activity w/ correct contact id
+        private void EditButtonPushed(object sender, EventArgs e)
+        {
+            //Send the contact's id in the intent
+            var bundle = new Bundle();
+            bundle.PutInt("ContactID", contact.Id);
+
+            var intent = new Intent(this, typeof(EditContactActivity));
+            intent.PutExtras(bundle);
+
+            StartActivityForResult(intent, 100);
+        }
+
+        protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
+        {
+            //base.OnActivityResult(requestCode, resultCode, data);
+
+            if (requestCode == 100 && resultCode == Result.Ok)
+            {
+                string firstName = data.GetStringExtra("FirstName");
+                string lastName = data.GetStringExtra("LastName");
+                string email = data.GetStringExtra("Email");
+                string phone = data.GetStringExtra("Phone");
+
+                //Load that contact info into appropriate data fields
+                FindViewById<TextView>(Resource.Id.nameField).Text = $"{firstName} {lastName}";
+                FindViewById<TextView>(Resource.Id.phoneField).Text = $"{phone}";
+                FindViewById<TextView>(Resource.Id.emailField).Text = $"{email}";
+
             }
         }
 

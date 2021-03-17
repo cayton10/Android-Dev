@@ -19,7 +19,7 @@
 			app:popupTheme="@style/AppTheme.PopupOverlay"
 			android:minWidth="25px"
 			android:minHeight="25px"
-			app:title="Contact Detail">
+			app:title="Edit Contact">
 			
 		</android.support.v7.widget.Toolbar >
 
@@ -33,18 +33,16 @@
 		<TextView
 			android:layout_width       ="wrap_content"
 			android:layout_height      ="wrap_content"
-			android:text               ="Name:"
-			android:layout_marginRight ="9.1dp"
-			android:layout_marginTop   ="14.6dp"
-			android:textAppearance="?android:attr/textAppearanceMedium"/>
-		<TextView
-			android:id            ="@+id/nameField"
+			android:text               ="First:"
+			android:layout_marginRight ="20dp"
+			android:layout_marginBottom="6.6dp"
+			android:layout_marginTop   ="14.6dp" />
+		<EditText
+			android:id            ="@+id/firstInput"
 			android:layout_gravity="center"
 			android:layout_width  ="300dp"
 			android:layout_height ="wrap_content"
-			android:singleLine="true"
-			android:textAppearance="?android:attr/textAppearanceMedium"
-			android:layout_marginTop="4dp" />
+			android:singleLine="true"/>
 	</LinearLayout>
 	<LinearLayout
 		android:orientation="horizontal"
@@ -54,19 +52,40 @@
 		<TextView
 			android:layout_width       ="wrap_content"
 			android:layout_height      ="wrap_content"
-			android:text               ="Phone:"
-			android:layout_marginRight ="6.9dp"
+			android:text               ="Last:"
+			android:layout_marginRight ="20dp"
 			android:layout_marginBottom="6.6dp"
-			android:layout_marginTop   ="14.6dp"
-			android:textAppearance="?android:attr/textAppearanceMedium"/>
-		<TextView
-			android:id            ="@+id/phoneField"
+			android:layout_marginTop   ="14.6dp" />
+		<EditText
+			android:id            ="@+id/lastInput"
 			android:layout_gravity="center"
 			android:layout_width  ="300dp"
 			android:layout_height ="wrap_content"
-			android:singleLine="true"
-			android:textAppearance="?android:attr/textAppearanceMedium"
-			android:layout_marginTop="4dp" />
+			android:singleLine="true"/>
+	</LinearLayout>
+
+	<LinearLayout
+				android:orientation="horizontal"
+
+		android:layout_width       ="match_parent"
+		android:layout_height      ="wrap_content"
+		android:layout_marginLeft  ="10dp"
+		android:layout_marginRight ="10dp"
+		android:layout_marginBottom="10dp">
+		<TextView
+			android:layout_width       ="wrap_content"
+			android:layout_height      ="wrap_content"
+			android:text               ="Phone:"
+			android:layout_marginRight ="8dp"
+			android:layout_marginBottom="6.6dp"
+			android:layout_marginTop   ="14.6dp" />
+		<EditText
+			android:id            ="@+id/phoneInput"
+			android:inputType="number"
+			android:layout_gravity="center"
+			android:layout_width  ="300dp"
+			android:layout_height ="wrap_content"
+			android:layout_marginRight="85.5dp" android:singleLine="true"/>
 	</LinearLayout>
 
 	<LinearLayout
@@ -83,48 +102,44 @@
 			android:text               ="Email:"
 			android:layout_marginRight ="13dp"
 			android:layout_marginBottom="6.6dp"
-			android:layout_marginTop   ="14.6dp"
-			android:textAppearance="?android:attr/textAppearanceMedium"/>
-		<TextView
-			android:id            ="@+id/emailField"
+			android:layout_marginTop   ="14.6dp" />
+		<EditText
+			android:id            ="@+id/emailInput"
 			android:layout_gravity="center"
 			android:layout_width  ="300dp"
 			android:layout_height ="wrap_content"
-			android:singleLine="true"
-			android:textAppearance="?android:attr/textAppearanceMedium"
-			android:layout_marginTop="4dp"
-			android:layout_marginLeft="5.5dp" />
+			android:singleLine="true"/>
 	</LinearLayout>
-
 	<FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 		android:layout_weight=".7"/>
 	<LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
 		android:orientation="vertical"
-		android:gravity="center_horizontal"
-		android:layout_weight="0.2">
+		android:gravity="center_horizontal">
 
 		<Button
 			android:layout_width ="200dp"
 			android:layout_height="wrap_content"
-			android:text         ="Call"
-			android:id           ="@+id/callContact" />
-
+			android:text         ="Save"
+			android:id           ="@+id/saveContact" />
 		<Button
 			android:layout_width ="200dp"
 			android:layout_height="wrap_content"
-			android:text         ="Email"
-			android:id           ="@+id/emailContact" />
-
+			android:text         ="Cancel"
+			android:id           ="@+id/cancelButton"
+			android:layout_marginTop="7.6dp" />
 		<Button
 			android:layout_width ="200dp"
+			android:background="#E83B16"
 			android:layout_height="wrap_content"
-			android:text         ="Edit"
-			android:id           ="@+id/editContact" />
+			android:text         ="Delete"
+			android:id           ="@+id/deleteContact"
+			android:layout_marginTop="8.0dp" />
 
+		
 	</LinearLayout>
 
 </LinearLayout>

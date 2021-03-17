@@ -3391,100 +3391,100 @@ namespace DataPersistence
 			public const int default_activity_button = 2131230780;
 			
 			// aapt resource value: 0x7F08003D
-			public const int design_bottom_sheet = 2131230781;
+			public const int deleteContact = 2131230781;
 			
 			// aapt resource value: 0x7F08003E
-			public const int design_menu_item_action_area = 2131230782;
+			public const int design_bottom_sheet = 2131230782;
 			
 			// aapt resource value: 0x7F08003F
-			public const int design_menu_item_action_area_stub = 2131230783;
+			public const int design_menu_item_action_area = 2131230783;
 			
 			// aapt resource value: 0x7F080040
-			public const int design_menu_item_text = 2131230784;
+			public const int design_menu_item_action_area_stub = 2131230784;
 			
 			// aapt resource value: 0x7F080041
-			public const int design_navigation_view = 2131230785;
+			public const int design_menu_item_text = 2131230785;
 			
 			// aapt resource value: 0x7F080042
-			public const int disableHome = 2131230786;
+			public const int design_navigation_view = 2131230786;
 			
 			// aapt resource value: 0x7F080043
-			public const int editContact = 2131230787;
+			public const int disableHome = 2131230787;
 			
 			// aapt resource value: 0x7F080044
-			public const int edit_query = 2131230788;
+			public const int editContact = 2131230788;
 			
 			// aapt resource value: 0x7F080045
-			public const int emailContact = 2131230789;
+			public const int edit_query = 2131230789;
 			
 			// aapt resource value: 0x7F080046
-			public const int emailField = 2131230790;
+			public const int emailContact = 2131230790;
 			
 			// aapt resource value: 0x7F080047
-			public const int emailInput = 2131230791;
+			public const int emailField = 2131230791;
 			
 			// aapt resource value: 0x7F080048
-			public const int end = 2131230792;
+			public const int emailInput = 2131230792;
 			
 			// aapt resource value: 0x7F080049
-			public const int enterAlways = 2131230793;
+			public const int end = 2131230793;
 			
 			// aapt resource value: 0x7F08004A
-			public const int enterAlwaysCollapsed = 2131230794;
+			public const int enterAlways = 2131230794;
 			
 			// aapt resource value: 0x7F08004B
-			public const int exitUntilCollapsed = 2131230795;
-			
-			// aapt resource value: 0x7F08004D
-			public const int expanded_menu = 2131230797;
+			public const int enterAlwaysCollapsed = 2131230795;
 			
 			// aapt resource value: 0x7F08004C
-			public const int expand_activities_button = 2131230796;
+			public const int exitUntilCollapsed = 2131230796;
 			
 			// aapt resource value: 0x7F08004E
-			public const int fill = 2131230798;
+			public const int expanded_menu = 2131230798;
 			
-			// aapt resource value: 0x7F080051
-			public const int filled = 2131230801;
+			// aapt resource value: 0x7F08004D
+			public const int expand_activities_button = 2131230797;
 			
 			// aapt resource value: 0x7F08004F
-			public const int fill_horizontal = 2131230799;
-			
-			// aapt resource value: 0x7F080050
-			public const int fill_vertical = 2131230800;
+			public const int fill = 2131230799;
 			
 			// aapt resource value: 0x7F080052
-			public const int firstInput = 2131230802;
+			public const int filled = 2131230802;
+			
+			// aapt resource value: 0x7F080050
+			public const int fill_horizontal = 2131230800;
+			
+			// aapt resource value: 0x7F080051
+			public const int fill_vertical = 2131230801;
 			
 			// aapt resource value: 0x7F080053
-			public const int @fixed = 2131230803;
+			public const int firstInput = 2131230803;
 			
 			// aapt resource value: 0x7F080054
-			public const int forever = 2131230804;
+			public const int @fixed = 2131230804;
+			
+			// aapt resource value: 0x7F080055
+			public const int forever = 2131230805;
 			
 			// aapt resource value: 0x7F080002
 			public const int FUNCTION = 2131230722;
 			
-			// aapt resource value: 0x7F080055
-			public const int ghost_view = 2131230805;
-			
 			// aapt resource value: 0x7F080056
-			public const int group_divider = 2131230806;
+			public const int ghost_view = 2131230806;
 			
 			// aapt resource value: 0x7F080057
-			public const int home = 2131230807;
+			public const int group_divider = 2131230807;
 			
 			// aapt resource value: 0x7F080058
-			public const int homeAsUp = 2131230808;
+			public const int home = 2131230808;
 			
 			// aapt resource value: 0x7F080059
-			public const int icon = 2131230809;
+			public const int homeAsUp = 2131230809;
 			
 			// aapt resource value: 0x7F08005A
-			public const int icon_group = 2131230810;
+			public const int icon = 2131230810;
 			
 			// aapt resource value: 0x7F08005B
-			public const int idField = 2131230811;
+			public const int icon_group = 2131230811;
 			
 			// aapt resource value: 0x7F08005C
 			public const int ifRoom = 2131230812;
@@ -4078,40 +4078,43 @@ namespace DataPersistence
 			public const int design_text_input_password_icon = 2131427374;
 			
 			// aapt resource value: 0x7F0B002F
-			public const int mtrl_layout_snackbar = 2131427375;
+			public const int Edit = 2131427375;
 			
 			// aapt resource value: 0x7F0B0030
-			public const int mtrl_layout_snackbar_include = 2131427376;
+			public const int mtrl_layout_snackbar = 2131427376;
 			
 			// aapt resource value: 0x7F0B0031
-			public const int notification_action = 2131427377;
+			public const int mtrl_layout_snackbar_include = 2131427377;
 			
 			// aapt resource value: 0x7F0B0032
-			public const int notification_action_tombstone = 2131427378;
+			public const int notification_action = 2131427378;
 			
 			// aapt resource value: 0x7F0B0033
-			public const int notification_template_custom_big = 2131427379;
+			public const int notification_action_tombstone = 2131427379;
 			
 			// aapt resource value: 0x7F0B0034
-			public const int notification_template_icon_group = 2131427380;
+			public const int notification_template_custom_big = 2131427380;
 			
 			// aapt resource value: 0x7F0B0035
-			public const int notification_template_part_chronometer = 2131427381;
+			public const int notification_template_icon_group = 2131427381;
 			
 			// aapt resource value: 0x7F0B0036
-			public const int notification_template_part_time = 2131427382;
+			public const int notification_template_part_chronometer = 2131427382;
 			
 			// aapt resource value: 0x7F0B0037
-			public const int select_dialog_item_material = 2131427383;
+			public const int notification_template_part_time = 2131427383;
 			
 			// aapt resource value: 0x7F0B0038
-			public const int select_dialog_multichoice_material = 2131427384;
+			public const int select_dialog_item_material = 2131427384;
 			
 			// aapt resource value: 0x7F0B0039
-			public const int select_dialog_singlechoice_material = 2131427385;
+			public const int select_dialog_multichoice_material = 2131427385;
 			
 			// aapt resource value: 0x7F0B003A
-			public const int support_simple_spinner_dropdown_item = 2131427386;
+			public const int select_dialog_singlechoice_material = 2131427386;
+			
+			// aapt resource value: 0x7F0B003B
+			public const int support_simple_spinner_dropdown_item = 2131427387;
 			
 			static Layout()
 			{
