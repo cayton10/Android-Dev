@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android        ="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation  ="vertical"
+	android:layout_width ="match_parent"
+	android:layout_height="match_parent"
+	android:weightSum="1">
+	<android.support.design.widget.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay"
+		>
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			app:title="Edit Contact">
+			
+		</android.support.v7.widget.Toolbar >
+
+	</android.support.design.widget.AppBarLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width ="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp">
+		<TextView
+			android:layout_width       ="wrap_content"
+			android:layout_height      ="wrap_content"
+			android:text               ="First:"
+			android:layout_marginRight ="20dp"
+			android:layout_marginBottom="6.6dp"
+			android:layout_marginTop   ="14.6dp" />
+		<EditText
+			android:id            ="@+id/firstInput"
+			android:layout_gravity="center"
+			android:layout_width  ="300dp"
+			android:layout_height ="wrap_content"
+			android:singleLine="true"/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width ="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp">
+		<TextView
+			android:layout_width       ="wrap_content"
+			android:layout_height      ="wrap_content"
+			android:text               ="Last:"
+			android:layout_marginRight ="20dp"
+			android:layout_marginBottom="6.6dp"
+			android:layout_marginTop   ="14.6dp" />
+		<EditText
+			android:id            ="@+id/lastInput"
+			android:layout_gravity="center"
+			android:layout_width  ="300dp"
+			android:layout_height ="wrap_content"
+			android:singleLine="true"/>
+	</LinearLayout>
+
+	<LinearLayout
+				android:orientation="horizontal"
+
+		android:layout_width       ="match_parent"
+		android:layout_height      ="wrap_content"
+		android:layout_marginLeft  ="10dp"
+		android:layout_marginRight ="10dp"
+		android:layout_marginBottom="10dp">
+		<TextView
+			android:layout_width       ="wrap_content"
+			android:layout_height      ="wrap_content"
+			android:text               ="Phone:"
+			android:layout_marginRight ="8dp"
+			android:layout_marginBottom="6.6dp"
+			android:layout_marginTop   ="14.6dp" />
+		<EditText
+			android:id            ="@+id/phoneInput"
+			android:inputType="number"
+			android:layout_gravity="center"
+			android:layout_width  ="300dp"
+			android:layout_height ="wrap_content"
+			android:layout_marginRight="85.5dp" android:singleLine="true"/>
+	</LinearLayout>
+
+	<LinearLayout
+				android:orientation="horizontal"
+
+		android:layout_width       ="match_parent"
+		android:layout_height      ="wrap_content"
+		android:layout_marginLeft  ="10dp"
+		android:layout_marginRight ="10dp"
+		android:layout_marginBottom="10dp">
+		<TextView
+			android:layout_width       ="wrap_content"
+			android:layout_height      ="wrap_content"
+			android:text               ="Email:"
+			android:layout_marginRight ="13dp"
+			android:layout_marginBottom="6.6dp"
+			android:layout_marginTop   ="14.6dp" />
+		<EditText
+			android:id            ="@+id/emailInput"
+			android:layout_gravity="center"
+			android:layout_width  ="300dp"
+			android:layout_height ="wrap_content"
+			android:singleLine="true"/>
+	</LinearLayout>
+	<FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_weight=".7"/>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center_horizontal">
+
+		<Button
+			android:layout_width ="200dp"
+			android:layout_height="wrap_content"
+			android:text         ="Save"
+			android:id           ="@+id/saveContact" />
+		<Button
+			android:layout_width ="200dp"
+			android:layout_height="wrap_content"
+			android:text         ="Cancel"
+			android:id           ="@+id/cancelButton"
+			android:layout_marginTop="7.6dp" />
+		<Button
+			android:layout_width ="200dp"
+			android:background="#E83B16"
+			android:layout_height="wrap_content"
+			android:text         ="Delete"
+			android:id           ="@+id/deleteContact"
+			android:layout_marginTop="8.0dp" />
+
+		
+	</LinearLayout>
+
+</LinearLayout>

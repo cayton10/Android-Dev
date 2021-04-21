@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{71574DEC-155C-42D5-A120-25FF408A32D0}|Default">
+  <MonoDevelop.Ide.ItemProperties.FibService AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="pixel_3" PreferredExecutionTarget="Android.98899a354841584b34" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MainActivity.cs">
+    <Files>
+      <File FileName="MainActivity.cs" Line="56" Column="67" />
+      <File FileName="FibService.cs" Line="73" Column="44" />
+      <File FileName="FibReceiver.cs" Line="26" Column="1" />
+      <File FileName="Resources/layout/content_main.xml" Line="57" Column="18" />
+      <File FileName="Resources/layout/activity_main.xml" Line="13" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FibService" expanded="True">
+            <Node name="FibService" expanded="True">
+              <Node name="Assets" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
+                <Node name="raw" expanded="True" />
+              </Node>
+              <Node name="MainActivity.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

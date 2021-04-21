@@ -8,20 +8,19 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DataPersistence" expanded="True">
-            <Node name="DataPersistence" expanded="True">
+            <Node name="DataPersistence" expanded="True" selected="True">
               <Node name="Resources" expanded="True">
                 <Node name="layout" expanded="True" />
               </Node>
-              <Node name="Contact.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.DataPersistence PreferredExecutionTarget="Android.Pixel_3a_API_30_x86" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.JSON__REST PreferredExecutionTarget="Android.Pixel_3a_API_30_x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

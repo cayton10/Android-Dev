@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{8298B742-DE7E-44E1-A730-573571BB166E}|Default">
+  <MonoDevelop.Ide.ItemProperties.REST__FORMS.Android PreferredExecutionTarget="Android.98899a354841584b34" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="REST_FORMS/Data/EmptyClass.cs">
+    <Files>
+      <File FileName="REST_FORMS/App.xaml" Line="8" Column="15" />
+      <File FileName="REST_FORMS/MainPage.xaml.cs" />
+      <File FileName="REST_FORMS/MainPage.xaml" Line="9" Column="17" />
+      <File FileName="REST_FORMS/Data/EmptyClass.cs" Line="11" Column="22" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="REST_FORMS" expanded="True">
+            <Node name="REST_FORMS" expanded="True">
+              <Node name="Data" expanded="True">
+                <Node name="EmptyClass.cs" selected="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+            <Node name="REST_FORMS.Android" expanded="True">
+              <Node name="Assets" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
